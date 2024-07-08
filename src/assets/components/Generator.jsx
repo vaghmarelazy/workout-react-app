@@ -51,7 +51,7 @@ function Generator(props) {
 
   return (
     <SectionWrapper id={'generator'} header={"Generate your workout"} title={["its", "Huge", "o'clock"]}>
-      <Header index={"01"} title={"Pick your Poison"} description={"Select the workout you want"} />
+      <Header index={"01"} title={"What's your Target"} description={"Select the workout you want"} />
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         {Object.keys(WORKOUTS).map((type, typeIndex) => (
           <button
@@ -94,7 +94,7 @@ function Generator(props) {
           </div>
         )}
       </div>
-      <Header index={"03"} title={"What's your Target?"} description={"Select the type of the Workout"} />
+      <Header index={"03"} title={"What's your Goal?"} description={"Select the type you want to work on."} />
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {Object.keys(SCHEMES).map((scheme, schemeIndex) => (
           <button
